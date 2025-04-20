@@ -29,7 +29,9 @@ onMounted(() => {
       <div class="card-body">
         <div class="row align-items-center">
           <div class="col-auto">
-            <input class="form-check-input" type="checkbox" v-model="task.completed" :id="index + 'check'">
+            <input class="form-check-input" type="checkbox" v-model="task.completed" :id="index + 'check'"
+              @change="taskStore.updateTask(index, task)" />
+
           </div>
           <div class="col">
             <label :for="index + 'check'">

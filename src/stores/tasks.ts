@@ -18,7 +18,12 @@ export const useTasksStore = defineStore('tasks', {
     addTask(task: Task) {
       this.taskList.push(task as Task)
       this.saveLocalData()
-      this.actionAlert('Boa!! Trate de fazer essa tarefa em!', 'success')
+      this.actionAlert('Boa, Trate de fazer essa tarefa em!', 'success')
+    },
+    updateTask(index: number, task: Task) {
+      this.taskList[index] = task
+      this.saveLocalData()
+      this.actionAlert('Tarefa atualizada com sucesso!', 'success')
     },
     saveLocalData() {
       localStorage.setItem('tasks', JSON.stringify(this.taskList))
