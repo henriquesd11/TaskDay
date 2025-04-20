@@ -47,6 +47,11 @@ label {
   color: global.$primaryColor
 }
 
+.badge_date {
+    background: #6c757d;
+    color: global.$primaryColor
+}
+
 #taskDesc {
   margin-left: 30px;
   font-size: 0.8rem;
@@ -60,15 +65,32 @@ label {
     margin-top: 10px;
   }
 
-  .row.align-items-center {
-    flex-direction: column;
-    align-items: stretch;
+  #card-input {
+    .row.align-items-center {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .row.align-items-center > .col-auto,
+    .row.align-items-center > .col {
+      width: 100%;
+      margin-bottom: 10px;
+    }
   }
 
-  .row.align-items-center > .col-auto,
-  .row.align-items-center > .col {
-    width: 100%;
-    margin-bottom: 10px;
-  }
+  .list-task {
+    .row.align-items-center {
+      flex-direction: row;
+      align-items: center;
+    }
 
+    .row.align-items-center > .col {
+      width: auto;
+      margin-bottom: 0;
+    }
+
+    .row.align-items-center > .col-auto {
+      margin-right: 10px;
+    }
+  }
 }

@@ -96,7 +96,7 @@ const addTask = () => {
 </script>
 
 <template>
-  <div class="card m-2">
+  <div class="card m-2" id="card-input">
     <div class="card-body">
       <label for="task" class="mb-3">Adicionar Task</label>
       <div class="row align-items-center">
