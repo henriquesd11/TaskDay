@@ -1,0 +1,49 @@
+@import '@/assets/global.scss';
+
+.navbar-brand, .navbar-toggler {
+    color: $primaryColor;
+}
+
+.navbar-brand:hover, .navbar-toggler:hover {
+    color: $primaryColorHover;
+}
+
+.nav {
+    padding: 1rem;
+}
+
+.nav-link {
+    color: $greenBackground;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+}
+
+.nav-link:hover {
+    color: $greenBackground;
+}
+
+.nav-link.active {
+    color: $greenBackgroundLight;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+.offcanvas-header {
+    background-color: $greenBackground;
+    border-bottom: 1px solid #dee2e6;
+    color: $primaryColor;
+}
+
+.btn-close {
+    color: $primaryColor
+}
+
+.navbar.border-bottom.border-body.fixed-top {
+    background-color: $greenBackground;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+

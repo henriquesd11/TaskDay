@@ -1,0 +1,74 @@
+@use './global';
+
+label {
+  font-weight: bold;
+}
+
+#button {
+  border-radius: 10px;
+  background: global.$greenBackground;
+  border-color: global.$greenBackground;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#button:hover {
+  background: global.$greenBackgroundLight;
+  border-color: global.$greenBackgroundLight;
+}
+
+
+.card {
+  .form-select {
+    border-radius: 10px;
+  }
+}
+
+.card .form-check-input {
+  border-radius: 6px;
+  margin-right: 15px;
+}
+
+#task, #deskTask, #dateInput, .alert, .card {
+  border-radius: 10px;
+}
+
+.badge_course {
+  background: #2db317;
+  color: global.$primaryColor
+}
+
+.badge_work {
+  background: #0a58ca;
+  color: global.$primaryColor;
+}
+
+.badge_personal {
+  background: #f47515;
+  color: global.$primaryColor
+}
+
+#taskDesc {
+  margin-left: 30px;
+  font-size: 0.8rem;
+  color: #888888;
+}
+
+@media (max-width: 768px) {
+  #button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .row.align-items-center {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .row.align-items-center > .col-auto,
+  .row.align-items-center > .col {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+}
